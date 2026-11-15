@@ -109,7 +109,10 @@ def collect_real_images(n=5000):
 def export_metrics(rows, filename):
     import pandas as pd
     df=pd.DataFrame(rows); df.to_csv(OUT_DIR/filename,index=False)
-    display(df)
+    try:
+        display(df)
+    except NameError:
+        print(df.to_string())
     return df
 
 # %% [markdown]
