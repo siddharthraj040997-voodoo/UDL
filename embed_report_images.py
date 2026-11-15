@@ -2,6 +2,7 @@ import json, os
 import base64
 
 OUT_DIR = "outputs"
+LAB_DIR = "lab image"
 
 def get_base64_image(image_path):
     if not os.path.exists(image_path):
@@ -9,15 +10,17 @@ def get_base64_image(image_path):
     with open(image_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode('utf-8')
 
-# Load all JSON histories for exact numbers
+# Load histories
 w_hist = json.load(open(os.path.join(OUT_DIR, "wgan_history.json")))
 gp_hist = json.load(open(os.path.join(OUT_DIR, "wgangp_history.json")))
-v1_hist = json.load(open(os.path.join(OUT_DIR, "beta_vae_1_history.json")))
-v2_hist = json.load(open(os.path.join(OUT_DIR, "beta_vae_2_history.json")))
-v4_hist = json.load(open(os.path.join(OUT_DIR, "beta_vae_4_history.json")))
-v10_hist = json.load(open(os.path.join(OUT_DIR, "beta_vae_10_history.json")))
 
-# Charts and sample grids
+# The 4 Actual Lab Images from `lab image/`
+b64_lab_prayogshala_gpu = get_base64_image(os.path.join(LAB_DIR, "image (3).png")) # Prayogshala GPU Lab Session A40
+b64_lab_vae_fid = get_base64_image(os.path.join(LAB_DIR, "image (2).png"))         # Beta-VAE 50/50 & FID calculation
+b64_lab_wgan_start = get_base64_image(os.path.join(LAB_DIR, "image (1).png"))      # WGAN execution on CUDA
+b64_lab_vae_train = get_base64_image(os.path.join(LAB_DIR, "image.png"))           # Beta-VAE training in lab console
+
+# Model result charts and sample grids
 b64_vae_psnr_chart = get_base64_image(os.path.join(OUT_DIR, "vae_psnr_vs_epochs.png"))
 b64_vqvae_psnr_chart = get_base64_image(os.path.join(OUT_DIR, "vqvae_psnr_vs_epochs.png"))
 b64_vae_rec = get_base64_image(os.path.join(OUT_DIR, "vae_reconstructions_100.png"))
@@ -29,7 +32,7 @@ b64_vqvae_samp = get_base64_image(os.path.join(OUT_DIR, "vqvae_pixelcnn_samples_
 b64_wgan_samp = get_base64_image(os.path.join(OUT_DIR, "wgan_samples_100.png"))
 b64_wgangp_samp = get_base64_image(os.path.join(OUT_DIR, "wgangp_samples_100.png"))
 
-# WGAN epoch evolution snapshots (epochs 10, 50, 100)
+# WGAN epoch evolution snapshots
 b64_wgan_ep10 = get_base64_image(os.path.join(OUT_DIR, "wgan_epoch_10.png"))
 b64_wgan_ep50 = get_base64_image(os.path.join(OUT_DIR, "wgan_epoch_50.png"))
 b64_wgan_ep100 = get_base64_image(os.path.join(OUT_DIR, "wgan_epoch_100.png"))
@@ -37,12 +40,10 @@ b64_wgangp_ep10 = get_base64_image(os.path.join(OUT_DIR, "wgangp_epoch_10.png"))
 b64_wgangp_ep50 = get_base64_image(os.path.join(OUT_DIR, "wgangp_epoch_50.png"))
 b64_wgangp_ep100 = get_base64_image(os.path.join(OUT_DIR, "wgangp_epoch_100.png"))
 
-# Construct SVG chart for WGAN vs WGAN-GP loss comparison
+# SVG chart
 w_epochs = [r['epoch'] for r in w_hist]
 w_losses = [r['critic_loss'] for r in w_hist]
 gp_losses = [r['critic_loss'] for r in gp_hist]
-
-# Normalize to SVG coordinates (width=700, height=220)
 min_l, max_l = min(min(w_losses), min(gp_losses)), max(max(w_losses), max(gp_losses))
 def to_svg_pt(ep, val):
     x = 50 + (ep - 1) * (620 / 99)
@@ -54,24 +55,20 @@ pts_gp = " ".join([to_svg_pt(ep, l) for ep, l in zip(w_epochs, gp_losses)])
 
 svg_chart = f"""
 <svg viewBox="0 0 720 250" style="width:100%; max-width:700px; background:#ffffff; border:1px solid #e2e8f0; border-radius:6px; margin:12px auto; display:block;">
-  <!-- Grid lines -->
   <line x1="50" y1="20" x2="670" y2="20" stroke="#edf2f7" stroke-width="1"/>
   <line x1="50" y1="65" x2="670" y2="65" stroke="#edf2f7" stroke-width="1"/>
   <line x1="50" y1="110" x2="670" y2="110" stroke="#edf2f7" stroke-width="1"/>
   <line x1="50" y1="155" x2="670" y2="155" stroke="#edf2f7" stroke-width="1"/>
   <line x1="50" y1="200" x2="670" y2="200" stroke="#cbd5e0" stroke-width="1.5"/>
   <line x1="50" y1="20" x2="50" y2="200" stroke="#cbd5e0" stroke-width="1.5"/>
-  <!-- Axis labels -->
   <text x="50" y="218" font-size="11" fill="#718096" text-anchor="middle">1</text>
   <text x="205" y="218" font-size="11" fill="#718096" text-anchor="middle">25</text>
   <text x="360" y="218" font-size="11" fill="#718096" text-anchor="middle">50</text>
   <text x="515" y="218" font-size="11" fill="#718096" text-anchor="middle">75</text>
   <text x="670" y="218" font-size="11" fill="#718096" text-anchor="middle">100 (Epoch)</text>
   <text x="15" y="115" font-size="11" fill="#718096" transform="rotate(-90 15,115)" text-anchor="middle">Critic Loss</text>
-  <!-- Curves -->
   <polyline fill="none" stroke="#e53e3e" stroke-width="2" points="{pts_w}"/>
   <polyline fill="none" stroke="#3182ce" stroke-width="2" points="{pts_gp}"/>
-  <!-- Legend -->
   <circle cx="200" cy="238" r="4" fill="#e53e3e"/>
   <text x="210" y="242" font-size="11" fill="#2d3748">WGAN Critic Loss (Weight Clipping)</text>
   <circle cx="450" cy="238" r="4" fill="#3182ce"/>
@@ -83,7 +80,7 @@ html_content = f"""<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>UDL Assignment 2 - Comprehensive Final Submission Report</title>
+<title>UDL Assignment 2 - Part C Submission Report - Group 22</title>
 <style>
   @page {{
     size: A4;
@@ -195,6 +192,18 @@ html_content = f"""<!DOCTYPE html>
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   }}
+  .img-grid-2 {{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 8px 0;
+    page-break-inside: avoid;
+  }}
+  .img-grid-2 img {{
+    width: 100%;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+  }}
   .img-grid-3 {{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -278,8 +287,33 @@ html_content = f"""<!DOCTYPE html>
   </div>
 </div>
 
-<h2>1. Infrastructure & Execution Compliance</h2>
-<p>In accordance with assignment requirements, all computational workflows, environment setup, and data pipelines were validated on the <strong>BITS WILP Prayogshala</strong> infrastructure under account <code>s2025ae05706</code>. Accelerated model training across the full epoch schedule (100 epochs for WGAN/WGAN-GP, 50 epochs for VAE/VQ-VAE, 30 epochs for PixelCNN) was executed on NVIDIA CUDA GPUs. All quantitative metrics, convergence histories, checkpoints, and generated grids were saved directly to <code>./outputs</code>.</p>
+<h2>1. Infrastructure & Execution Compliance (BITS WILP Prayogshala)</h2>
+<p>In accordance with assignment requirements, all model implementations, computational workflows, and data pipelines were validated on the official <strong>BITS WILP Prayogshala GPU Lab</strong> under student credentials (<strong>SIDDHARTH RAJ</strong>, ID: <code>s2025ae05706</code>) for course <em>AIMLZG533D – Unsupervised Deep Learning</em> using NVIDIA A40 hardware infrastructure.</p>
+
+<div class="image-container">
+  <h3>Figure 1.1: Official BITS WILP Prayogshala GPU Lab Session Evidence</h3>
+  {"<img src='data:image/png;base64," + b64_lab_prayogshala_gpu + "' style='max-width:92%;' />" if b64_lab_prayogshala_gpu else ""}
+  <div class="caption">Genuine Prayogshala GPU Lab Session (AIMLZG533D) showing active NVIDIA A40 instance, session duration, and authenticated student profile (SIDDHARTH RAJ).</div>
+</div>
+
+<div class="img-grid-2">
+  <div>
+    {"<img src='data:image/png;base64," + b64_lab_vae_train + "' />" if b64_lab_vae_train else ""}
+    <div class="caption" style="text-align:center;"><strong>Figure 1.2:</strong> &beta;-VAE training log progression on lab console.</div>
+  </div>
+  <div>
+    {"<img src='data:image/png;base64," + b64_lab_vae_fid + "' />" if b64_lab_vae_fid else ""}
+    <div class="caption" style="text-align:center;"><strong>Figure 1.3:</strong> Inception-v3 FID calculation for all four &beta; values.</div>
+  </div>
+</div>
+
+<div class="image-container">
+  <h3>Figure 1.4: WGAN CUDA Execution and Workspace Verification</h3>
+  {"<img src='data:image/png;base64," + b64_lab_wgan_start + "' style='max-width:92%;' />" if b64_lab_wgan_start else ""}
+  <div class="caption">Lab terminal session confirming CUDA acceleration, dataset loading, and WGAN background optimization.</div>
+</div>
+
+<div class="page-break"></div>
 
 <h2>2. Part A: &beta;-VAE Empirical Analysis (&beta; &isin; {{1, 2, 4, 10}})</h2>
 
@@ -344,8 +378,8 @@ As &beta; increases from 1 to 10, the KL divergence term imposes stronger pressu
 </table>
 
 <div class="image-container">
-  <h3>Figure 1: &beta;-VAE Reconstruction Quality (Validation PSNR vs. Epochs)</h3>
-  {"<img src='data:image/png;base64," + b64_vae_psnr_chart + "' style='max-width:80%;' />" if b64_vae_psnr_chart else "<p>[vae_psnr_vs_epochs.png]</p>"}
+  <h3>Figure 2: &beta;-VAE Reconstruction Quality (Validation PSNR vs. Epochs)</h3>
+  {"<img src='data:image/png;base64," + b64_vae_psnr_chart + "' style='max-width:80%;' />" if b64_vae_psnr_chart else ""}
   <div class="caption">Convergence curves over 50 epochs showing stable learning across all four &beta; values.</div>
 </div>
 
@@ -407,8 +441,8 @@ As &beta; increases from 1 to 10, the KL divergence term imposes stronger pressu
 Decreasing K from 512 to 128 raises codebook utilization to 100%, completely eliminating code collapse. K=256 provides the optimal compromise: high active code perplexity (132.22), strong codebook utilization (62.11%), and crisp 23.82 dB reconstruction PSNR. The PixelCNN autoregressive prior trained on K=256 models the spatial index distribution effectively, achieving an FID of 117.83.</p>
 
 <div class="image-container">
-  <h3>Figure 2: VQ-VAE Validation PSNR vs. Epochs (K &isin; {{512, 256, 128}})</h3>
-  {"<img src='data:image/png;base64," + b64_vqvae_psnr_chart + "' style='max-width:80%;' />" if b64_vqvae_psnr_chart else "<p>[vqvae_psnr_vs_epochs.png]</p>"}
+  <h3>Figure 3: VQ-VAE Validation PSNR vs. Epochs (K &isin; {{512, 256, 128}})</h3>
+  {"<img src='data:image/png;base64," + b64_vqvae_psnr_chart + "' style='max-width:80%;' />" if b64_vqvae_psnr_chart else ""}
   <div class="caption">Reconstruction quality progression across 50 epochs for all three codebook capacities.</div>
 </div>
 
@@ -461,7 +495,7 @@ Decreasing K from 512 to 128 raises codebook utilization to 100%, completely eli
 </table>
 
 <div class="image-container">
-  <h3>Figure 3: WGAN vs. WGAN-GP Critic Convergence Loss Curves</h3>
+  <h3>Figure 4: WGAN vs. WGAN-GP Critic Convergence Loss Curves</h3>
   {svg_chart}
   <div class="caption">Critic loss trajectories across 100 epochs demonstrating stable Wasserstein estimation in WGAN-GP vs. bounded clipping in WGAN.</div>
 </div>
@@ -549,7 +583,7 @@ Decreasing K from 512 to 128 raises codebook utilization to 100%, completely eli
 
 <h3>5.1 Comparative Analysis</h3>
 <ol>
-  <li><strong>Reconstruction Error:</strong> VQ-VAE decisively outperforms &beta;-VAE (23.82 dB vs 18.14 dB). The discrete codebook bottleneck eliminates the continuous Gaussian prior mismatch, preserving fine object contours and color textures.</li>
+  <li><strong>Reconstruction Accuracy:</strong> VQ-VAE decisively outperforms &beta;-VAE (23.82 dB vs 18.14 dB). The discrete codebook bottleneck eliminates the continuous Gaussian prior mismatch, preserving fine object contours and color textures.</li>
   <li><strong>Sampling Quality:</strong> WGAN-GP achieves the best generative realism with an FID of <strong>48.71</strong>, reducing FID by 54.3% over WGAN and 70.4% over &beta;-VAE. Adversarial feedback penalizes unrealistic smoothing that pixel-level MSE losses cannot resolve.</li>
   <li><strong>Sampling Latency &amp; Speed:</strong> While VQ-VAE offers excellent reconstructions, sampling from its prior requires sequential 8&times;8 autoregressive PixelCNN prediction (64 passes per image). In contrast, WGAN-GP and &beta;-VAE synthesize entire image batches in a single parallel feedforward pass.</li>
 </ol>
@@ -559,42 +593,42 @@ Decreasing K from 512 to 128 raises codebook utilization to 100%, completely eli
 <h2>6. Visual Evidence: Required 100-Sample Grids</h2>
 
 <div class="image-container">
-  <h3>Figure 4: WGAN-GP Generated Samples (100 Samples, 100 Epochs, FID = 48.71)</h3>
-  {"<img src='data:image/png;base64," + b64_wgangp_samp + "' />" if b64_wgangp_samp else "<p>wgangp_samples_100.png</p>"}
+  <h3>Figure 5: WGAN-GP Generated Samples (100 Samples, 100 Epochs, FID = 48.71)</h3>
+  {"<img src='data:image/png;base64," + b64_wgangp_samp + "' />" if b64_wgangp_samp else ""}
   <div class="caption">WGAN-GP 10&times;10 sample grid showing crisp CIFAR-10 objects (vehicles, animals) with superior sharpness.</div>
 </div>
 
 <div class="image-container">
-  <h3>Figure 5: WGAN Generated Samples (100 Samples, 100 Epochs, FID = 106.65)</h3>
-  {"<img src='data:image/png;base64," + b64_wgan_samp + "' />" if b64_wgan_samp else "<p>wgan_samples_100.png</p>"}
+  <h3>Figure 6: WGAN Generated Samples (100 Samples, 100 Epochs, FID = 106.65)</h3>
+  {"<img src='data:image/png;base64," + b64_wgan_samp + "' />" if b64_wgan_samp else ""}
   <div class="caption">WGAN 10&times;10 sample grid demonstrating weight clipping dynamics with softer image features.</div>
 </div>
 
 <div class="page-break"></div>
 
 <div class="image-container">
-  <h3>Figure 6: VQ-VAE (K=256) + PixelCNN Autoregressive Prior Samples (100 Samples, FID = 117.83)</h3>
-  {"<img src='data:image/png;base64," + b64_vqvae_samp + "' />" if b64_vqvae_samp else "<p>vqvae_pixelcnn_samples_100.png</p>"}
+  <h3>Figure 7: VQ-VAE (K=256) + PixelCNN Autoregressive Prior Samples (100 Samples, FID = 117.83)</h3>
+  {"<img src='data:image/png;base64," + b64_vqvae_samp + "' />" if b64_vqvae_samp else ""}
   <div class="caption">Autoregressive prior samples synthesized via masked convolution over the 8&times;8 discrete codebook grid.</div>
 </div>
 
 <div class="image-container">
-  <h3>Figure 7: &beta;-VAE (&beta;=1) Prior Samples (100 Samples, FID = 164.38)</h3>
-  {"<img src='data:image/png;base64," + b64_vae_samp + "' />" if b64_vae_samp else "<p>vae_samples_100.png</p>"}
+  <h3>Figure 8: &beta;-VAE (&beta;=1) Prior Samples (100 Samples, FID = 164.38)</h3>
+  {"<img src='data:image/png;base64," + b64_vae_samp + "' />" if b64_vae_samp else ""}
   <div class="caption">&beta;-VAE (&beta;=1) continuous prior Gaussian samples N(0, I) exhibiting smooth global features with typical MSE softening.</div>
 </div>
 
 <div class="page-break"></div>
 
 <div class="image-container">
-  <h3>Figure 8: VQ-VAE (K=256) Reconstructions (Top: Originals, Bottom: Reconstructions, PSNR = 23.82 dB)</h3>
+  <h3>Figure 9: VQ-VAE (K=256) Reconstructions (Top: Originals, Bottom: Reconstructions, PSNR = 23.82 dB)</h3>
   {"<img src='data:image/png;base64," + b64_vqvae_orig + "' style='max-width:48%; display:inline-block; margin-right:4px;' />" if b64_vqvae_orig else ""}
   {"<img src='data:image/png;base64," + b64_vqvae_rec + "' style='max-width:48%; display:inline-block;' />" if b64_vqvae_rec else ""}
   <div class="caption">Side-by-side comparison of 100 CIFAR-10 test originals (left) and VQ-VAE K=256 reconstructions (right).</div>
 </div>
 
 <div class="image-container">
-  <h3>Figure 9: &beta;-VAE (&beta;=1) Reconstructions (Top: Originals, Bottom: Reconstructions, PSNR = 18.14 dB)</h3>
+  <h3>Figure 10: &beta;-VAE (&beta;=1) Reconstructions (Top: Originals, Bottom: Reconstructions, PSNR = 18.14 dB)</h3>
   {"<img src='data:image/png;base64," + b64_vae_orig + "' style='max-width:48%; display:inline-block; margin-right:4px;' />" if b64_vae_orig else ""}
   {"<img src='data:image/png;base64," + b64_vae_rec + "' style='max-width:48%; display:inline-block;' />" if b64_vae_rec else ""}
   <div class="caption">Side-by-side comparison of 100 CIFAR-10 test originals (left) and &beta;-VAE (&beta;=1) reconstructions (right).</div>
@@ -604,11 +638,10 @@ Decreasing K from 512 to 128 raises codebook utilization to 100%, completely eli
 </html>
 """
 
-# Write to root and to Deliverables/
 with open("PartC_Comparative_Discussion_Report.html", "w", encoding="utf-8") as f:
     f.write(html_content)
 
 with open("Deliverables/PartC_Comparative_Discussion_Report.html", "w", encoding="utf-8") as f:
     f.write(html_content)
 
-print("Comprehensive Part C Report with all charts and metrics generated successfully!")
+print("Report successfully updated with all 4 authentic lab images from 'lab image/'!")
