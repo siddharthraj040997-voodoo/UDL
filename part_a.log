@@ -1,0 +1,465 @@
+nohup: ignoring input
+Device: cuda
+beta=1 epoch=1/50 loss=114.462 val PSNR=16.78
+beta=1 epoch=2/50 loss=86.077 val PSNR=17.26
+beta=1 epoch=3/50 loss=81.726 val PSNR=17.43
+beta=1 epoch=4/50 loss=79.993 val PSNR=17.63
+beta=1 epoch=5/50 loss=79.044 val PSNR=17.78
+beta=1 epoch=6/50 loss=78.428 val PSNR=17.72
+beta=1 epoch=7/50 loss=77.973 val PSNR=17.84
+beta=1 epoch=8/50 loss=77.561 val PSNR=17.88
+beta=1 epoch=9/50 loss=77.296 val PSNR=17.85
+beta=1 epoch=10/50 loss=77.023 val PSNR=17.92
+beta=1 epoch=11/50 loss=76.869 val PSNR=17.87
+beta=1 epoch=12/50 loss=76.565 val PSNR=17.93
+beta=1 epoch=13/50 loss=76.422 val PSNR=17.92
+beta=1 epoch=14/50 loss=76.126 val PSNR=17.98
+beta=1 epoch=15/50 loss=76.066 val PSNR=18.02
+beta=1 epoch=16/50 loss=75.811 val PSNR=18.00
+beta=1 epoch=17/50 loss=75.771 val PSNR=17.98
+beta=1 epoch=18/50 loss=75.726 val PSNR=18.07
+beta=1 epoch=19/50 loss=75.481 val PSNR=18.02
+beta=1 epoch=20/50 loss=75.458 val PSNR=18.04
+beta=1 epoch=21/50 loss=75.294 val PSNR=18.03
+beta=1 epoch=22/50 loss=75.237 val PSNR=18.03
+beta=1 epoch=23/50 loss=75.171 val PSNR=18.00
+beta=1 epoch=24/50 loss=75.052 val PSNR=18.06
+beta=1 epoch=25/50 loss=74.968 val PSNR=18.11
+beta=1 epoch=26/50 loss=74.936 val PSNR=18.13
+beta=1 epoch=27/50 loss=74.881 val PSNR=18.08
+beta=1 epoch=28/50 loss=74.804 val PSNR=18.06
+beta=1 epoch=29/50 loss=74.686 val PSNR=18.16
+beta=1 epoch=30/50 loss=74.701 val PSNR=18.11
+beta=1 epoch=31/50 loss=74.609 val PSNR=18.12
+beta=1 epoch=32/50 loss=74.599 val PSNR=18.10
+beta=1 epoch=33/50 loss=74.491 val PSNR=18.09
+beta=1 epoch=34/50 loss=74.491 val PSNR=18.12
+beta=1 epoch=35/50 loss=74.361 val PSNR=18.11
+beta=1 epoch=36/50 loss=74.342 val PSNR=18.13
+beta=1 epoch=37/50 loss=74.297 val PSNR=18.17
+beta=1 epoch=38/50 loss=74.243 val PSNR=18.19
+beta=1 epoch=39/50 loss=74.258 val PSNR=18.18
+beta=1 epoch=40/50 loss=74.275 val PSNR=18.12
+beta=1 epoch=41/50 loss=74.201 val PSNR=18.11
+beta=1 epoch=42/50 loss=74.149 val PSNR=18.12
+beta=1 epoch=43/50 loss=74.079 val PSNR=18.16
+beta=1 epoch=44/50 loss=74.080 val PSNR=18.17
+beta=1 epoch=45/50 loss=73.992 val PSNR=18.13
+beta=1 epoch=46/50 loss=73.999 val PSNR=18.15
+beta=1 epoch=47/50 loss=73.932 val PSNR=18.16
+beta=1 epoch=48/50 loss=73.871 val PSNR=18.10
+beta=1 epoch=49/50 loss=73.920 val PSNR=18.13
+beta=1 epoch=50/50 loss=73.870 val PSNR=18.14
+beta=2 epoch=1/50 loss=129.254 val PSNR=16.05
+beta=2 epoch=2/50 loss=101.435 val PSNR=16.47
+beta=2 epoch=3/50 loss=98.405 val PSNR=16.59
+beta=2 epoch=4/50 loss=96.807 val PSNR=16.75
+beta=2 epoch=5/50 loss=95.977 val PSNR=16.75
+beta=2 epoch=6/50 loss=95.507 val PSNR=16.71
+beta=2 epoch=7/50 loss=95.123 val PSNR=16.79
+beta=2 epoch=8/50 loss=94.835 val PSNR=16.78
+beta=2 epoch=9/50 loss=94.785 val PSNR=16.81
+beta=2 epoch=10/50 loss=94.558 val PSNR=16.83
+beta=2 epoch=11/50 loss=94.300 val PSNR=16.87
+beta=2 epoch=12/50 loss=94.225 val PSNR=16.89
+beta=2 epoch=13/50 loss=93.964 val PSNR=16.96
+beta=2 epoch=14/50 loss=93.816 val PSNR=16.94
+beta=2 epoch=15/50 loss=93.589 val PSNR=17.00
+beta=2 epoch=16/50 loss=93.359 val PSNR=16.90
+beta=2 epoch=17/50 loss=93.325 val PSNR=16.98
+beta=2 epoch=18/50 loss=93.130 val PSNR=16.99
+beta=2 epoch=19/50 loss=93.044 val PSNR=16.96
+beta=2 epoch=20/50 loss=93.001 val PSNR=17.07
+beta=2 epoch=21/50 loss=92.896 val PSNR=16.97
+beta=2 epoch=22/50 loss=92.936 val PSNR=16.99
+beta=2 epoch=23/50 loss=92.820 val PSNR=16.97
+beta=2 epoch=24/50 loss=92.694 val PSNR=17.02
+beta=2 epoch=25/50 loss=92.614 val PSNR=16.97
+beta=2 epoch=26/50 loss=92.617 val PSNR=17.04
+beta=2 epoch=27/50 loss=92.532 val PSNR=16.98
+beta=2 epoch=28/50 loss=92.444 val PSNR=17.06
+beta=2 epoch=29/50 loss=92.434 val PSNR=17.04
+beta=2 epoch=30/50 loss=92.384 val PSNR=17.06
+beta=2 epoch=31/50 loss=92.261 val PSNR=17.06
+beta=2 epoch=32/50 loss=92.194 val PSNR=17.05
+beta=2 epoch=33/50 loss=92.154 val PSNR=17.01
+beta=2 epoch=34/50 loss=92.154 val PSNR=16.98
+beta=2 epoch=35/50 loss=92.066 val PSNR=17.04
+beta=2 epoch=36/50 loss=92.019 val PSNR=17.06
+beta=2 epoch=37/50 loss=91.985 val PSNR=17.08
+beta=2 epoch=38/50 loss=91.930 val PSNR=17.04
+beta=2 epoch=39/50 loss=91.944 val PSNR=17.10
+beta=2 epoch=40/50 loss=91.837 val PSNR=17.03
+beta=2 epoch=41/50 loss=91.838 val PSNR=17.00
+beta=2 epoch=42/50 loss=91.772 val PSNR=17.08
+beta=2 epoch=43/50 loss=91.737 val PSNR=17.08
+beta=2 epoch=44/50 loss=91.730 val PSNR=17.07
+beta=2 epoch=45/50 loss=91.704 val PSNR=17.09
+beta=2 epoch=46/50 loss=91.662 val PSNR=17.04
+beta=2 epoch=47/50 loss=91.689 val PSNR=17.12
+beta=2 epoch=48/50 loss=91.501 val PSNR=17.07
+beta=2 epoch=49/50 loss=91.534 val PSNR=17.12
+beta=2 epoch=50/50 loss=91.538 val PSNR=17.11
+beta=4 epoch=1/50 loss=148.535 val PSNR=15.13
+beta=4 epoch=2/50 loss=121.829 val PSNR=15.63
+beta=4 epoch=3/50 loss=117.831 val PSNR=15.69
+beta=4 epoch=4/50 loss=116.253 val PSNR=15.76
+beta=4 epoch=5/50 loss=115.558 val PSNR=15.86
+beta=4 epoch=6/50 loss=115.038 val PSNR=15.87
+beta=4 epoch=7/50 loss=114.412 val PSNR=15.95
+beta=4 epoch=8/50 loss=113.972 val PSNR=15.87
+beta=4 epoch=9/50 loss=113.886 val PSNR=15.94
+beta=4 epoch=10/50 loss=113.627 val PSNR=16.00
+beta=4 epoch=11/50 loss=113.516 val PSNR=15.94
+beta=4 epoch=12/50 loss=113.446 val PSNR=15.99
+beta=4 epoch=13/50 loss=113.359 val PSNR=15.90
+beta=4 epoch=14/50 loss=113.286 val PSNR=15.94
+beta=4 epoch=15/50 loss=113.068 val PSNR=16.01
+beta=4 epoch=16/50 loss=113.100 val PSNR=15.93
+beta=4 epoch=17/50 loss=112.969 val PSNR=16.02
+beta=4 epoch=18/50 loss=112.708 val PSNR=15.97
+beta=4 epoch=19/50 loss=112.567 val PSNR=15.96
+beta=4 epoch=20/50 loss=112.567 val PSNR=16.03
+beta=4 epoch=21/50 loss=112.447 val PSNR=16.02
+beta=4 epoch=22/50 loss=112.253 val PSNR=16.07
+beta=4 epoch=23/50 loss=112.200 val PSNR=16.04
+beta=4 epoch=24/50 loss=112.344 val PSNR=16.11
+beta=4 epoch=25/50 loss=112.089 val PSNR=16.04
+beta=4 epoch=26/50 loss=112.034 val PSNR=16.04
+beta=4 epoch=27/50 loss=112.007 val PSNR=16.02
+beta=4 epoch=28/50 loss=112.007 val PSNR=16.05
+beta=4 epoch=29/50 loss=111.889 val PSNR=16.08
+beta=4 epoch=30/50 loss=111.753 val PSNR=16.01
+beta=4 epoch=31/50 loss=111.794 val PSNR=16.02
+beta=4 epoch=32/50 loss=111.695 val PSNR=16.07
+beta=4 epoch=33/50 loss=111.683 val PSNR=16.08
+beta=4 epoch=34/50 loss=111.681 val PSNR=16.09
+beta=4 epoch=35/50 loss=111.552 val PSNR=16.07
+beta=4 epoch=36/50 loss=111.608 val PSNR=16.11
+beta=4 epoch=37/50 loss=111.496 val PSNR=16.08
+beta=4 epoch=38/50 loss=111.494 val PSNR=16.16
+beta=4 epoch=39/50 loss=111.434 val PSNR=16.12
+beta=4 epoch=40/50 loss=111.536 val PSNR=16.14
+beta=4 epoch=41/50 loss=111.378 val PSNR=16.10
+beta=4 epoch=42/50 loss=111.303 val PSNR=16.09
+beta=4 epoch=43/50 loss=111.364 val PSNR=16.09
+beta=4 epoch=44/50 loss=111.309 val PSNR=16.10
+beta=4 epoch=45/50 loss=111.187 val PSNR=16.13
+beta=4 epoch=46/50 loss=111.269 val PSNR=16.09
+beta=4 epoch=47/50 loss=111.240 val PSNR=16.10
+beta=4 epoch=48/50 loss=111.137 val PSNR=16.11
+beta=4 epoch=49/50 loss=111.033 val PSNR=16.09
+beta=4 epoch=50/50 loss=111.228 val PSNR=16.12
+beta=10 epoch=1/50 loss=175.793 val PSNR=14.07
+beta=10 epoch=2/50 loss=151.959 val PSNR=14.58
+beta=10 epoch=3/50 loss=143.803 val PSNR=14.53
+beta=10 epoch=4/50 loss=142.934 val PSNR=14.69
+beta=10 epoch=5/50 loss=141.898 val PSNR=14.72
+beta=10 epoch=6/50 loss=141.242 val PSNR=14.69
+beta=10 epoch=7/50 loss=140.932 val PSNR=14.73
+beta=10 epoch=8/50 loss=140.615 val PSNR=14.68
+beta=10 epoch=9/50 loss=140.653 val PSNR=14.76
+beta=10 epoch=10/50 loss=140.351 val PSNR=14.78
+beta=10 epoch=11/50 loss=140.456 val PSNR=14.82
+beta=10 epoch=12/50 loss=140.380 val PSNR=14.81
+beta=10 epoch=13/50 loss=140.114 val PSNR=14.82
+beta=10 epoch=14/50 loss=140.125 val PSNR=14.85
+beta=10 epoch=15/50 loss=140.096 val PSNR=14.86
+beta=10 epoch=16/50 loss=140.119 val PSNR=14.78
+beta=10 epoch=17/50 loss=140.022 val PSNR=14.80
+beta=10 epoch=18/50 loss=139.968 val PSNR=14.80
+beta=10 epoch=19/50 loss=140.048 val PSNR=14.82
+beta=10 epoch=20/50 loss=139.774 val PSNR=14.84
+beta=10 epoch=21/50 loss=139.750 val PSNR=14.75
+beta=10 epoch=22/50 loss=139.865 val PSNR=14.80
+beta=10 epoch=23/50 loss=139.803 val PSNR=14.85
+beta=10 epoch=24/50 loss=139.585 val PSNR=14.87
+beta=10 epoch=25/50 loss=139.516 val PSNR=14.85
+beta=10 epoch=26/50 loss=139.493 val PSNR=14.86
+beta=10 epoch=27/50 loss=139.497 val PSNR=14.96
+beta=10 epoch=28/50 loss=139.427 val PSNR=14.81
+beta=10 epoch=29/50 loss=139.536 val PSNR=14.86
+beta=10 epoch=30/50 loss=139.378 val PSNR=14.85
+beta=10 epoch=31/50 loss=139.300 val PSNR=14.83
+beta=10 epoch=32/50 loss=139.346 val PSNR=14.80
+beta=10 epoch=33/50 loss=139.301 val PSNR=14.89
+beta=10 epoch=34/50 loss=139.355 val PSNR=14.80
+beta=10 epoch=35/50 loss=139.278 val PSNR=14.86
+beta=10 epoch=36/50 loss=139.257 val PSNR=14.82
+beta=10 epoch=37/50 loss=139.204 val PSNR=14.87
+beta=10 epoch=38/50 loss=139.260 val PSNR=14.90
+beta=10 epoch=39/50 loss=139.230 val PSNR=14.81
+beta=10 epoch=40/50 loss=139.144 val PSNR=14.85
+beta=10 epoch=41/50 loss=139.157 val PSNR=14.89
+beta=10 epoch=42/50 loss=139.215 val PSNR=14.88
+beta=10 epoch=43/50 loss=139.167 val PSNR=14.90
+beta=10 epoch=44/50 loss=139.019 val PSNR=14.84
+beta=10 epoch=45/50 loss=139.001 val PSNR=14.83
+beta=10 epoch=46/50 loss=138.954 val PSNR=14.86
+beta=10 epoch=47/50 loss=139.100 val PSNR=14.87
+beta=10 epoch=48/50 loss=138.936 val PSNR=14.85
+beta=10 epoch=49/50 loss=139.037 val PSNR=14.88
+beta=10 epoch=50/50 loss=139.026 val PSNR=14.88
+FID beta 1 : 164.55924006478807
+FID beta 2 : 215.26709950090623
+FID beta 4 : 269.49763681389146
+FID beta 10 : 314.0787357240558
+              model         FID
+0   beta-VAE beta=1  164.559240
+1   beta-VAE beta=2  215.267100
+2   beta-VAE beta=4  269.497637
+3  beta-VAE beta=10  314.078736
+K=512 epoch=1/50 loss=0.2842 PSNR=16.78
+K=512 epoch=2/50 loss=0.0843 PSNR=20.24
+K=512 epoch=3/50 loss=0.0228 PSNR=21.24
+K=512 epoch=4/50 loss=0.0181 PSNR=21.70
+K=512 epoch=5/50 loss=0.0161 PSNR=22.08
+K=512 epoch=6/50 loss=0.0149 PSNR=22.33
+K=512 epoch=7/50 loss=0.0142 PSNR=22.54
+K=512 epoch=8/50 loss=0.0138 PSNR=22.68
+K=512 epoch=9/50 loss=0.0135 PSNR=22.81
+K=512 epoch=10/50 loss=0.0136 PSNR=22.92
+K=512 epoch=11/50 loss=0.0140 PSNR=23.00
+K=512 epoch=12/50 loss=0.0148 PSNR=23.12
+K=512 epoch=13/50 loss=0.0151 PSNR=23.23
+K=512 epoch=14/50 loss=0.0149 PSNR=23.32
+K=512 epoch=15/50 loss=0.0148 PSNR=23.42
+K=512 epoch=16/50 loss=0.0147 PSNR=23.49
+K=512 epoch=17/50 loss=0.0146 PSNR=23.55
+K=512 epoch=18/50 loss=0.0147 PSNR=23.58
+K=512 epoch=19/50 loss=0.0147 PSNR=23.66
+K=512 epoch=20/50 loss=0.0148 PSNR=23.70
+K=512 epoch=21/50 loss=0.0150 PSNR=23.74
+K=512 epoch=22/50 loss=0.0152 PSNR=23.76
+K=512 epoch=23/50 loss=0.0153 PSNR=23.79
+K=512 epoch=24/50 loss=0.0154 PSNR=23.81
+K=512 epoch=25/50 loss=0.0155 PSNR=23.84
+K=512 epoch=26/50 loss=0.0155 PSNR=23.85
+K=512 epoch=27/50 loss=0.0156 PSNR=23.87
+K=512 epoch=28/50 loss=0.0156 PSNR=23.88
+K=512 epoch=29/50 loss=0.0156 PSNR=23.89
+K=512 epoch=30/50 loss=0.0156 PSNR=23.89
+K=512 epoch=31/50 loss=0.0157 PSNR=23.92
+K=512 epoch=32/50 loss=0.0157 PSNR=23.94
+K=512 epoch=33/50 loss=0.0157 PSNR=23.93
+K=512 epoch=34/50 loss=0.0157 PSNR=23.96
+K=512 epoch=35/50 loss=0.0157 PSNR=23.96
+K=512 epoch=36/50 loss=0.0158 PSNR=23.97
+K=512 epoch=37/50 loss=0.0158 PSNR=23.98
+K=512 epoch=38/50 loss=0.0158 PSNR=23.99
+K=512 epoch=39/50 loss=0.0158 PSNR=24.01
+K=512 epoch=40/50 loss=0.0159 PSNR=24.00
+K=512 epoch=41/50 loss=0.0159 PSNR=24.00
+K=512 epoch=42/50 loss=0.0159 PSNR=24.03
+K=512 epoch=43/50 loss=0.0159 PSNR=24.02
+K=512 epoch=44/50 loss=0.0160 PSNR=24.03
+K=512 epoch=45/50 loss=0.0160 PSNR=24.04
+K=512 epoch=46/50 loss=0.0160 PSNR=23.98
+K=512 epoch=47/50 loss=0.0161 PSNR=24.04
+K=512 epoch=48/50 loss=0.0161 PSNR=24.06
+K=512 epoch=49/50 loss=0.0161 PSNR=24.05
+K=512 epoch=50/50 loss=0.0161 PSNR=24.04
+K=256 epoch=1/50 loss=0.2936 PSNR=17.01
+K=256 epoch=2/50 loss=0.0935 PSNR=19.99
+K=256 epoch=3/50 loss=0.0252 PSNR=21.07
+K=256 epoch=4/50 loss=0.0187 PSNR=21.58
+K=256 epoch=5/50 loss=0.0164 PSNR=21.99
+K=256 epoch=6/50 loss=0.0151 PSNR=22.28
+K=256 epoch=7/50 loss=0.0146 PSNR=22.52
+K=256 epoch=8/50 loss=0.0149 PSNR=22.71
+K=256 epoch=9/50 loss=0.0152 PSNR=22.87
+K=256 epoch=10/50 loss=0.0153 PSNR=22.96
+K=256 epoch=11/50 loss=0.0153 PSNR=23.10
+K=256 epoch=12/50 loss=0.0151 PSNR=23.17
+K=256 epoch=13/50 loss=0.0149 PSNR=23.29
+K=256 epoch=14/50 loss=0.0147 PSNR=23.33
+K=256 epoch=15/50 loss=0.0146 PSNR=23.41
+K=256 epoch=16/50 loss=0.0146 PSNR=23.46
+K=256 epoch=17/50 loss=0.0146 PSNR=23.50
+K=256 epoch=18/50 loss=0.0146 PSNR=23.54
+K=256 epoch=19/50 loss=0.0145 PSNR=23.57
+K=256 epoch=20/50 loss=0.0145 PSNR=23.61
+K=256 epoch=21/50 loss=0.0145 PSNR=23.65
+K=256 epoch=22/50 loss=0.0144 PSNR=23.62
+K=256 epoch=23/50 loss=0.0144 PSNR=23.69
+K=256 epoch=24/50 loss=0.0144 PSNR=23.69
+K=256 epoch=25/50 loss=0.0144 PSNR=23.72
+K=256 epoch=26/50 loss=0.0144 PSNR=23.75
+K=256 epoch=27/50 loss=0.0144 PSNR=23.76
+K=256 epoch=28/50 loss=0.0144 PSNR=23.77
+K=256 epoch=29/50 loss=0.0145 PSNR=23.79
+K=256 epoch=30/50 loss=0.0145 PSNR=23.78
+K=256 epoch=31/50 loss=0.0146 PSNR=23.78
+K=256 epoch=32/50 loss=0.0146 PSNR=23.84
+K=256 epoch=33/50 loss=0.0146 PSNR=23.84
+K=256 epoch=34/50 loss=0.0147 PSNR=23.85
+K=256 epoch=35/50 loss=0.0147 PSNR=23.85
+K=256 epoch=36/50 loss=0.0148 PSNR=23.87
+K=256 epoch=37/50 loss=0.0149 PSNR=23.89
+K=256 epoch=38/50 loss=0.0150 PSNR=23.90
+K=256 epoch=39/50 loss=0.0151 PSNR=23.90
+K=256 epoch=40/50 loss=0.0151 PSNR=23.91
+K=256 epoch=41/50 loss=0.0153 PSNR=23.92
+K=256 epoch=42/50 loss=0.0155 PSNR=23.91
+K=256 epoch=43/50 loss=0.0157 PSNR=23.93
+K=256 epoch=44/50 loss=0.0158 PSNR=23.93
+K=256 epoch=45/50 loss=0.0159 PSNR=23.95
+K=256 epoch=46/50 loss=0.0159 PSNR=23.96
+K=256 epoch=47/50 loss=0.0159 PSNR=23.96
+K=256 epoch=48/50 loss=0.0159 PSNR=23.96
+K=256 epoch=49/50 loss=0.0160 PSNR=23.97
+K=256 epoch=50/50 loss=0.0160 PSNR=23.98
+K=128 epoch=1/50 loss=0.3060 PSNR=17.00
+K=128 epoch=2/50 loss=0.1029 PSNR=19.92
+K=128 epoch=3/50 loss=0.0287 PSNR=20.91
+K=128 epoch=4/50 loss=0.0212 PSNR=21.42
+K=128 epoch=5/50 loss=0.0190 PSNR=21.76
+K=128 epoch=6/50 loss=0.0180 PSNR=22.06
+K=128 epoch=7/50 loss=0.0175 PSNR=22.32
+K=128 epoch=8/50 loss=0.0173 PSNR=22.54
+K=128 epoch=9/50 loss=0.0172 PSNR=22.71
+K=128 epoch=10/50 loss=0.0169 PSNR=22.83
+K=128 epoch=11/50 loss=0.0169 PSNR=22.93
+K=128 epoch=12/50 loss=0.0168 PSNR=23.02
+K=128 epoch=13/50 loss=0.0166 PSNR=23.11
+K=128 epoch=14/50 loss=0.0166 PSNR=23.18
+K=128 epoch=15/50 loss=0.0165 PSNR=23.21
+K=128 epoch=16/50 loss=0.0167 PSNR=23.27
+K=128 epoch=17/50 loss=0.0168 PSNR=23.33
+K=128 epoch=18/50 loss=0.0169 PSNR=23.34
+K=128 epoch=19/50 loss=0.0171 PSNR=23.39
+K=128 epoch=20/50 loss=0.0173 PSNR=23.41
+K=128 epoch=21/50 loss=0.0175 PSNR=23.44
+K=128 epoch=22/50 loss=0.0176 PSNR=23.46
+K=128 epoch=23/50 loss=0.0178 PSNR=23.46
+K=128 epoch=24/50 loss=0.0180 PSNR=23.48
+K=128 epoch=25/50 loss=0.0181 PSNR=23.49
+K=128 epoch=26/50 loss=0.0183 PSNR=23.50
+K=128 epoch=27/50 loss=0.0184 PSNR=23.50
+K=128 epoch=28/50 loss=0.0185 PSNR=23.53
+K=128 epoch=29/50 loss=0.0186 PSNR=23.52
+K=128 epoch=30/50 loss=0.0187 PSNR=23.54
+K=128 epoch=31/50 loss=0.0187 PSNR=23.48
+K=128 epoch=32/50 loss=0.0188 PSNR=23.56
+K=128 epoch=33/50 loss=0.0188 PSNR=23.57
+K=128 epoch=34/50 loss=0.0189 PSNR=23.57
+K=128 epoch=35/50 loss=0.0189 PSNR=23.58
+K=128 epoch=36/50 loss=0.0190 PSNR=23.59
+K=128 epoch=37/50 loss=0.0190 PSNR=23.59
+K=128 epoch=38/50 loss=0.0190 PSNR=23.60
+K=128 epoch=39/50 loss=0.0190 PSNR=23.60
+K=128 epoch=40/50 loss=0.0191 PSNR=23.60
+K=128 epoch=41/50 loss=0.0191 PSNR=23.61
+K=128 epoch=42/50 loss=0.0192 PSNR=23.61
+K=128 epoch=43/50 loss=0.0192 PSNR=23.61
+K=128 epoch=44/50 loss=0.0192 PSNR=23.62
+K=128 epoch=45/50 loss=0.0193 PSNR=23.63
+K=128 epoch=46/50 loss=0.0193 PSNR=23.63
+K=128 epoch=47/50 loss=0.0193 PSNR=23.64
+K=128 epoch=48/50 loss=0.0193 PSNR=23.63
+K=128 epoch=49/50 loss=0.0193 PSNR=23.60
+K=128 epoch=50/50 loss=0.0194 PSNR=23.65
+K 512 latent tensor (50000, 8, 8)
+K 256 latent tensor (50000, 8, 8)
+K 128 latent tensor (50000, 8, 8)
+PixelCNN K=512 epoch=1/30 CE=5.4952
+PixelCNN K=512 epoch=2/30 CE=5.0702
+PixelCNN K=512 epoch=3/30 CE=4.7991
+PixelCNN K=512 epoch=4/30 CE=4.5530
+PixelCNN K=512 epoch=5/30 CE=4.4115
+PixelCNN K=512 epoch=6/30 CE=4.3383
+PixelCNN K=512 epoch=7/30 CE=4.2906
+PixelCNN K=512 epoch=8/30 CE=4.2555
+PixelCNN K=512 epoch=9/30 CE=4.2274
+PixelCNN K=512 epoch=10/30 CE=4.2048
+PixelCNN K=512 epoch=11/30 CE=4.1857
+PixelCNN K=512 epoch=12/30 CE=4.1699
+PixelCNN K=512 epoch=13/30 CE=4.1564
+PixelCNN K=512 epoch=14/30 CE=4.1445
+PixelCNN K=512 epoch=15/30 CE=4.1331
+PixelCNN K=512 epoch=16/30 CE=4.1226
+PixelCNN K=512 epoch=17/30 CE=4.1128
+PixelCNN K=512 epoch=18/30 CE=4.1040
+PixelCNN K=512 epoch=19/30 CE=4.0944
+PixelCNN K=512 epoch=20/30 CE=4.0861
+PixelCNN K=512 epoch=21/30 CE=4.0785
+PixelCNN K=512 epoch=22/30 CE=4.0706
+PixelCNN K=512 epoch=23/30 CE=4.0635
+PixelCNN K=512 epoch=24/30 CE=4.0568
+PixelCNN K=512 epoch=25/30 CE=4.0504
+PixelCNN K=512 epoch=26/30 CE=4.0444
+PixelCNN K=512 epoch=27/30 CE=4.0382
+PixelCNN K=512 epoch=28/30 CE=4.0325
+PixelCNN K=512 epoch=29/30 CE=4.0279
+PixelCNN K=512 epoch=30/30 CE=4.0219
+K 512 FID 140.90216883188145
+PixelCNN K=256 epoch=1/30 CE=5.1877
+PixelCNN K=256 epoch=2/30 CE=4.8343
+PixelCNN K=256 epoch=3/30 CE=4.5590
+PixelCNN K=256 epoch=4/30 CE=4.3731
+PixelCNN K=256 epoch=5/30 CE=4.2911
+PixelCNN K=256 epoch=6/30 CE=4.2417
+PixelCNN K=256 epoch=7/30 CE=4.2064
+PixelCNN K=256 epoch=8/30 CE=4.1776
+PixelCNN K=256 epoch=9/30 CE=4.1538
+PixelCNN K=256 epoch=10/30 CE=4.1326
+PixelCNN K=256 epoch=11/30 CE=4.1145
+PixelCNN K=256 epoch=12/30 CE=4.0980
+PixelCNN K=256 epoch=13/30 CE=4.0841
+PixelCNN K=256 epoch=14/30 CE=4.0718
+PixelCNN K=256 epoch=15/30 CE=4.0603
+PixelCNN K=256 epoch=16/30 CE=4.0504
+PixelCNN K=256 epoch=17/30 CE=4.0411
+PixelCNN K=256 epoch=18/30 CE=4.0320
+PixelCNN K=256 epoch=19/30 CE=4.0242
+PixelCNN K=256 epoch=20/30 CE=4.0170
+PixelCNN K=256 epoch=21/30 CE=4.0102
+PixelCNN K=256 epoch=22/30 CE=4.0031
+PixelCNN K=256 epoch=23/30 CE=3.9966
+PixelCNN K=256 epoch=24/30 CE=3.9910
+PixelCNN K=256 epoch=25/30 CE=3.9848
+PixelCNN K=256 epoch=26/30 CE=3.9800
+PixelCNN K=256 epoch=27/30 CE=3.9746
+PixelCNN K=256 epoch=28/30 CE=3.9697
+PixelCNN K=256 epoch=29/30 CE=3.9654
+PixelCNN K=256 epoch=30/30 CE=3.9610
+K 256 FID 148.84547936648718
+PixelCNN K=128 epoch=1/30 CE=4.7012
+PixelCNN K=128 epoch=2/30 CE=4.3206
+PixelCNN K=128 epoch=3/30 CE=4.0376
+PixelCNN K=128 epoch=4/30 CE=3.9439
+PixelCNN K=128 epoch=5/30 CE=3.8946
+PixelCNN K=128 epoch=6/30 CE=3.8584
+PixelCNN K=128 epoch=7/30 CE=3.8291
+PixelCNN K=128 epoch=8/30 CE=3.8054
+PixelCNN K=128 epoch=9/30 CE=3.7857
+PixelCNN K=128 epoch=10/30 CE=3.7687
+PixelCNN K=128 epoch=11/30 CE=3.7544
+PixelCNN K=128 epoch=12/30 CE=3.7420
+PixelCNN K=128 epoch=13/30 CE=3.7318
+PixelCNN K=128 epoch=14/30 CE=3.7216
+PixelCNN K=128 epoch=15/30 CE=3.7130
+PixelCNN K=128 epoch=16/30 CE=3.7054
+PixelCNN K=128 epoch=17/30 CE=3.6973
+PixelCNN K=128 epoch=18/30 CE=3.6905
+PixelCNN K=128 epoch=19/30 CE=3.6841
+PixelCNN K=128 epoch=20/30 CE=3.6790
+PixelCNN K=128 epoch=21/30 CE=3.6727
+PixelCNN K=128 epoch=22/30 CE=3.6676
+PixelCNN K=128 epoch=23/30 CE=3.6631
+PixelCNN K=128 epoch=24/30 CE=3.6588
+PixelCNN K=128 epoch=25/30 CE=3.6540
+PixelCNN K=128 epoch=26/30 CE=3.6500
+PixelCNN K=128 epoch=27/30 CE=3.6459
+PixelCNN K=128 epoch=28/30 CE=3.6426
+PixelCNN K=128 epoch=29/30 CE=3.6394
+PixelCNN K=128 epoch=30/30 CE=3.6354
+K 128 FID 141.99692749630142
+                   model         FID  reconstruction_PSNR
+0  VQ-VAE+PixelCNN K=512  140.902169            24.044462
+1  VQ-VAE+PixelCNN K=256  148.845479            23.975182
+2  VQ-VAE+PixelCNN K=128  141.996927            23.652977
+     K  active_codes  utilization_pct  perplexity
+0  512           201        39.257812  171.740753
+1  256           182        71.093750  154.929428
+2  128           128       100.000000  111.094910

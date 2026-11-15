@@ -1,0 +1,255 @@
+nohup: ignoring input
+Device: cuda
+Running VQ-VAE (epochs=50) and PixelCNN (epochs=30)
+VQ-VAE K=512 ep= 1/50 loss=0.2389 PSNR=18.25 active=65/512 (12.7%) perp=9.8
+VQ-VAE K=512 ep= 2/50 loss=0.0371 PSNR=20.79 active=70/512 (13.7%) perp=29.0
+VQ-VAE K=512 ep= 3/50 loss=0.0195 PSNR=21.54 active=71/512 (13.9%) perp=41.7
+VQ-VAE K=512 ep= 4/50 loss=0.0167 PSNR=22.01 active=78/512 (15.2%) perp=53.5
+VQ-VAE K=512 ep= 5/50 loss=0.0151 PSNR=22.33 active=95/512 (18.6%) perp=64.7
+VQ-VAE K=512 ep= 6/50 loss=0.0148 PSNR=22.62 active=98/512 (19.1%) perp=77.6
+VQ-VAE K=512 ep= 7/50 loss=0.0148 PSNR=22.86 active=111/512 (21.7%) perp=89.2
+VQ-VAE K=512 ep= 8/50 loss=0.0150 PSNR=23.07 active=127/512 (24.8%) perp=101.1
+VQ-VAE K=512 ep= 9/50 loss=0.0146 PSNR=23.23 active=143/512 (27.9%) perp=113.6
+VQ-VAE K=512 ep=10/50 loss=0.0144 PSNR=23.35 active=151/512 (29.5%) perp=121.5
+VQ-VAE K=512 ep=11/50 loss=0.0143 PSNR=23.43 active=152/512 (29.7%) perp=126.1
+VQ-VAE K=512 ep=12/50 loss=0.0142 PSNR=23.49 active=157/512 (30.7%) perp=127.3
+VQ-VAE K=512 ep=13/50 loss=0.0143 PSNR=23.53 active=159/512 (31.1%) perp=130.7
+VQ-VAE K=512 ep=14/50 loss=0.0143 PSNR=23.57 active=161/512 (31.4%) perp=134.8
+VQ-VAE K=512 ep=15/50 loss=0.0143 PSNR=23.64 active=163/512 (31.8%) perp=137.2
+VQ-VAE K=512 ep=16/50 loss=0.0143 PSNR=23.65 active=167/512 (32.6%) perp=140.9
+VQ-VAE K=512 ep=17/50 loss=0.0142 PSNR=23.71 active=170/512 (33.2%) perp=143.8
+VQ-VAE K=512 ep=18/50 loss=0.0142 PSNR=23.76 active=173/512 (33.8%) perp=145.6
+VQ-VAE K=512 ep=19/50 loss=0.0142 PSNR=23.78 active=175/512 (34.2%) perp=147.4
+VQ-VAE K=512 ep=20/50 loss=0.0142 PSNR=23.80 active=175/512 (34.2%) perp=146.5
+VQ-VAE K=512 ep=21/50 loss=0.0143 PSNR=23.83 active=179/512 (35.0%) perp=149.9
+VQ-VAE K=512 ep=22/50 loss=0.0143 PSNR=23.82 active=180/512 (35.2%) perp=150.5
+VQ-VAE K=512 ep=23/50 loss=0.0144 PSNR=23.87 active=181/512 (35.4%) perp=152.4
+VQ-VAE K=512 ep=24/50 loss=0.0144 PSNR=23.87 active=182/512 (35.5%) perp=154.6
+VQ-VAE K=512 ep=25/50 loss=0.0145 PSNR=23.89 active=183/512 (35.7%) perp=154.6
+VQ-VAE K=512 ep=26/50 loss=0.0147 PSNR=23.91 active=185/512 (36.1%) perp=156.2
+VQ-VAE K=512 ep=27/50 loss=0.0148 PSNR=23.94 active=186/512 (36.3%) perp=158.2
+VQ-VAE K=512 ep=28/50 loss=0.0148 PSNR=23.95 active=188/512 (36.7%) perp=159.0
+VQ-VAE K=512 ep=29/50 loss=0.0150 PSNR=23.95 active=189/512 (36.9%) perp=160.0
+VQ-VAE K=512 ep=30/50 loss=0.0150 PSNR=23.91 active=191/512 (37.3%) perp=160.6
+VQ-VAE K=512 ep=31/50 loss=0.0151 PSNR=23.98 active=191/512 (37.3%) perp=160.3
+VQ-VAE K=512 ep=32/50 loss=0.0151 PSNR=23.99 active=192/512 (37.5%) perp=161.3
+VQ-VAE K=512 ep=33/50 loss=0.0151 PSNR=24.00 active=193/512 (37.7%) perp=163.3
+VQ-VAE K=512 ep=34/50 loss=0.0151 PSNR=24.01 active=193/512 (37.7%) perp=162.8
+VQ-VAE K=512 ep=35/50 loss=0.0151 PSNR=23.98 active=194/512 (37.9%) perp=162.8
+VQ-VAE K=512 ep=36/50 loss=0.0152 PSNR=24.03 active=195/512 (38.1%) perp=164.5
+VQ-VAE K=512 ep=37/50 loss=0.0151 PSNR=24.02 active=194/512 (37.9%) perp=165.6
+VQ-VAE K=512 ep=38/50 loss=0.0151 PSNR=24.04 active=194/512 (37.9%) perp=164.5
+VQ-VAE K=512 ep=39/50 loss=0.0151 PSNR=24.05 active=195/512 (38.1%) perp=165.9
+VQ-VAE K=512 ep=40/50 loss=0.0151 PSNR=24.01 active=197/512 (38.5%) perp=165.9
+VQ-VAE K=512 ep=41/50 loss=0.0151 PSNR=24.03 active=196/512 (38.3%) perp=166.0
+VQ-VAE K=512 ep=42/50 loss=0.0151 PSNR=24.05 active=197/512 (38.5%) perp=166.1
+VQ-VAE K=512 ep=43/50 loss=0.0151 PSNR=24.07 active=197/512 (38.5%) perp=167.5
+VQ-VAE K=512 ep=44/50 loss=0.0151 PSNR=24.08 active=197/512 (38.5%) perp=167.5
+VQ-VAE K=512 ep=45/50 loss=0.0151 PSNR=24.08 active=198/512 (38.7%) perp=167.7
+VQ-VAE K=512 ep=46/50 loss=0.0151 PSNR=24.10 active=197/512 (38.5%) perp=168.1
+VQ-VAE K=512 ep=47/50 loss=0.0151 PSNR=24.07 active=197/512 (38.5%) perp=168.6
+VQ-VAE K=512 ep=48/50 loss=0.0151 PSNR=24.09 active=199/512 (38.9%) perp=169.6
+VQ-VAE K=512 ep=49/50 loss=0.0151 PSNR=24.10 active=199/512 (38.9%) perp=169.7
+VQ-VAE K=512 ep=50/50 loss=0.0152 PSNR=24.10 active=199/512 (38.9%) perp=169.5
+VQ-VAE K=256 ep= 1/50 loss=0.2317 PSNR=18.15 active=65/256 (25.4%) perp=8.6
+VQ-VAE K=256 ep= 2/50 loss=0.0359 PSNR=20.93 active=59/256 (23.0%) perp=34.3
+VQ-VAE K=256 ep= 3/50 loss=0.0205 PSNR=21.63 active=69/256 (27.0%) perp=45.1
+VQ-VAE K=256 ep= 4/50 loss=0.0192 PSNR=22.03 active=84/256 (32.8%) perp=57.0
+VQ-VAE K=256 ep= 5/50 loss=0.0179 PSNR=22.38 active=94/256 (36.7%) perp=64.4
+VQ-VAE K=256 ep= 6/50 loss=0.0176 PSNR=22.56 active=95/256 (37.1%) perp=69.3
+VQ-VAE K=256 ep= 7/50 loss=0.0176 PSNR=22.71 active=95/256 (37.1%) perp=73.3
+VQ-VAE K=256 ep= 8/50 loss=0.0177 PSNR=22.82 active=101/256 (39.5%) perp=77.1
+VQ-VAE K=256 ep= 9/50 loss=0.0178 PSNR=22.92 active=100/256 (39.1%) perp=79.3
+VQ-VAE K=256 ep=10/50 loss=0.0179 PSNR=22.96 active=106/256 (41.4%) perp=82.6
+VQ-VAE K=256 ep=11/50 loss=0.0181 PSNR=23.07 active=106/256 (41.4%) perp=84.4
+VQ-VAE K=256 ep=12/50 loss=0.0182 PSNR=23.12 active=108/256 (42.2%) perp=86.4
+VQ-VAE K=256 ep=13/50 loss=0.0182 PSNR=23.16 active=112/256 (43.8%) perp=89.8
+VQ-VAE K=256 ep=14/50 loss=0.0182 PSNR=23.23 active=112/256 (43.8%) perp=92.0
+VQ-VAE K=256 ep=15/50 loss=0.0182 PSNR=23.26 active=114/256 (44.5%) perp=92.1
+VQ-VAE K=256 ep=16/50 loss=0.0182 PSNR=23.29 active=113/256 (44.1%) perp=93.1
+VQ-VAE K=256 ep=17/50 loss=0.0182 PSNR=23.31 active=118/256 (46.1%) perp=94.5
+VQ-VAE K=256 ep=18/50 loss=0.0181 PSNR=23.31 active=119/256 (46.5%) perp=96.6
+VQ-VAE K=256 ep=19/50 loss=0.0180 PSNR=23.38 active=123/256 (48.0%) perp=99.6
+VQ-VAE K=256 ep=20/50 loss=0.0179 PSNR=23.40 active=126/256 (49.2%) perp=101.1
+VQ-VAE K=256 ep=21/50 loss=0.0178 PSNR=23.44 active=126/256 (49.2%) perp=101.9
+VQ-VAE K=256 ep=22/50 loss=0.0177 PSNR=23.47 active=129/256 (50.4%) perp=103.4
+VQ-VAE K=256 ep=23/50 loss=0.0176 PSNR=23.48 active=130/256 (50.8%) perp=103.6
+VQ-VAE K=256 ep=24/50 loss=0.0176 PSNR=23.49 active=129/256 (50.4%) perp=104.9
+VQ-VAE K=256 ep=25/50 loss=0.0175 PSNR=23.54 active=134/256 (52.3%) perp=109.2
+VQ-VAE K=256 ep=26/50 loss=0.0174 PSNR=23.55 active=133/256 (52.0%) perp=109.3
+VQ-VAE K=256 ep=27/50 loss=0.0174 PSNR=23.57 active=134/256 (52.3%) perp=111.4
+VQ-VAE K=256 ep=28/50 loss=0.0173 PSNR=23.58 active=136/256 (53.1%) perp=112.3
+VQ-VAE K=256 ep=29/50 loss=0.0173 PSNR=23.58 active=137/256 (53.5%) perp=112.3
+VQ-VAE K=256 ep=30/50 loss=0.0173 PSNR=23.61 active=137/256 (53.5%) perp=113.8
+VQ-VAE K=256 ep=31/50 loss=0.0172 PSNR=23.64 active=141/256 (55.1%) perp=115.7
+VQ-VAE K=256 ep=32/50 loss=0.0171 PSNR=23.60 active=141/256 (55.1%) perp=116.2
+VQ-VAE K=256 ep=33/50 loss=0.0171 PSNR=23.65 active=146/256 (57.0%) perp=118.5
+VQ-VAE K=256 ep=34/50 loss=0.0170 PSNR=23.67 active=145/256 (56.6%) perp=119.5
+VQ-VAE K=256 ep=35/50 loss=0.0170 PSNR=23.70 active=145/256 (56.6%) perp=121.3
+VQ-VAE K=256 ep=36/50 loss=0.0169 PSNR=23.71 active=146/256 (57.0%) perp=122.5
+VQ-VAE K=256 ep=37/50 loss=0.0168 PSNR=23.71 active=148/256 (57.8%) perp=123.0
+VQ-VAE K=256 ep=38/50 loss=0.0168 PSNR=23.74 active=150/256 (58.6%) perp=124.8
+VQ-VAE K=256 ep=39/50 loss=0.0168 PSNR=23.75 active=150/256 (58.6%) perp=124.3
+VQ-VAE K=256 ep=40/50 loss=0.0167 PSNR=23.73 active=152/256 (59.4%) perp=126.3
+VQ-VAE K=256 ep=41/50 loss=0.0167 PSNR=23.76 active=152/256 (59.4%) perp=126.5
+VQ-VAE K=256 ep=42/50 loss=0.0167 PSNR=23.78 active=153/256 (59.8%) perp=126.2
+VQ-VAE K=256 ep=43/50 loss=0.0167 PSNR=23.78 active=154/256 (60.2%) perp=127.1
+VQ-VAE K=256 ep=44/50 loss=0.0166 PSNR=23.80 active=156/256 (60.9%) perp=128.9
+VQ-VAE K=256 ep=45/50 loss=0.0166 PSNR=23.80 active=155/256 (60.5%) perp=129.3
+VQ-VAE K=256 ep=46/50 loss=0.0166 PSNR=23.80 active=155/256 (60.5%) perp=130.0
+VQ-VAE K=256 ep=47/50 loss=0.0166 PSNR=23.81 active=157/256 (61.3%) perp=130.6
+VQ-VAE K=256 ep=48/50 loss=0.0165 PSNR=23.83 active=160/256 (62.5%) perp=132.4
+VQ-VAE K=256 ep=49/50 loss=0.0164 PSNR=23.83 active=159/256 (62.1%) perp=133.1
+VQ-VAE K=256 ep=50/50 loss=0.0165 PSNR=23.82 active=159/256 (62.1%) perp=132.2
+VQ-VAE K=128 ep= 1/50 loss=0.2372 PSNR=18.36 active=43/128 (33.6%) perp=9.5
+VQ-VAE K=128 ep= 2/50 loss=0.0479 PSNR=20.83 active=55/128 (43.0%) perp=26.3
+VQ-VAE K=128 ep= 3/50 loss=0.0207 PSNR=21.48 active=67/128 (52.3%) perp=37.3
+VQ-VAE K=128 ep= 4/50 loss=0.0171 PSNR=21.95 active=66/128 (51.6%) perp=46.5
+VQ-VAE K=128 ep= 5/50 loss=0.0156 PSNR=22.24 active=75/128 (58.6%) perp=52.2
+VQ-VAE K=128 ep= 6/50 loss=0.0154 PSNR=22.47 active=84/128 (65.6%) perp=59.8
+VQ-VAE K=128 ep= 7/50 loss=0.0158 PSNR=22.66 active=93/128 (72.7%) perp=69.8
+VQ-VAE K=128 ep= 8/50 loss=0.0159 PSNR=22.84 active=104/128 (81.2%) perp=79.4
+VQ-VAE K=128 ep= 9/50 loss=0.0161 PSNR=22.98 active=111/128 (86.7%) perp=87.2
+VQ-VAE K=128 ep=10/50 loss=0.0163 PSNR=23.11 active=120/128 (93.8%) perp=94.7
+VQ-VAE K=128 ep=11/50 loss=0.0160 PSNR=23.18 active=126/128 (98.4%) perp=101.7
+VQ-VAE K=128 ep=12/50 loss=0.0157 PSNR=23.32 active=128/128 (100.0%) perp=107.7
+VQ-VAE K=128 ep=13/50 loss=0.0156 PSNR=23.37 active=128/128 (100.0%) perp=108.8
+VQ-VAE K=128 ep=14/50 loss=0.0156 PSNR=23.39 active=128/128 (100.0%) perp=109.4
+VQ-VAE K=128 ep=15/50 loss=0.0157 PSNR=23.44 active=128/128 (100.0%) perp=109.7
+VQ-VAE K=128 ep=16/50 loss=0.0158 PSNR=23.40 active=128/128 (100.0%) perp=110.3
+VQ-VAE K=128 ep=17/50 loss=0.0159 PSNR=23.47 active=128/128 (100.0%) perp=109.7
+VQ-VAE K=128 ep=18/50 loss=0.0160 PSNR=23.50 active=128/128 (100.0%) perp=109.7
+VQ-VAE K=128 ep=19/50 loss=0.0160 PSNR=23.49 active=128/128 (100.0%) perp=109.2
+VQ-VAE K=128 ep=20/50 loss=0.0161 PSNR=23.52 active=128/128 (100.0%) perp=109.6
+VQ-VAE K=128 ep=21/50 loss=0.0161 PSNR=23.52 active=128/128 (100.0%) perp=110.0
+VQ-VAE K=128 ep=22/50 loss=0.0162 PSNR=23.54 active=128/128 (100.0%) perp=110.0
+VQ-VAE K=128 ep=23/50 loss=0.0162 PSNR=23.51 active=128/128 (100.0%) perp=109.2
+VQ-VAE K=128 ep=24/50 loss=0.0163 PSNR=23.57 active=128/128 (100.0%) perp=110.0
+VQ-VAE K=128 ep=25/50 loss=0.0163 PSNR=23.58 active=128/128 (100.0%) perp=110.2
+VQ-VAE K=128 ep=26/50 loss=0.0164 PSNR=23.59 active=128/128 (100.0%) perp=110.4
+VQ-VAE K=128 ep=27/50 loss=0.0164 PSNR=23.59 active=128/128 (100.0%) perp=110.7
+VQ-VAE K=128 ep=28/50 loss=0.0165 PSNR=23.59 active=128/128 (100.0%) perp=110.3
+VQ-VAE K=128 ep=29/50 loss=0.0166 PSNR=23.60 active=128/128 (100.0%) perp=110.4
+VQ-VAE K=128 ep=30/50 loss=0.0166 PSNR=23.59 active=128/128 (100.0%) perp=110.7
+VQ-VAE K=128 ep=31/50 loss=0.0167 PSNR=23.60 active=128/128 (100.0%) perp=110.6
+VQ-VAE K=128 ep=32/50 loss=0.0167 PSNR=23.61 active=128/128 (100.0%) perp=110.4
+VQ-VAE K=128 ep=33/50 loss=0.0168 PSNR=23.63 active=128/128 (100.0%) perp=110.8
+VQ-VAE K=128 ep=34/50 loss=0.0169 PSNR=23.63 active=128/128 (100.0%) perp=110.4
+VQ-VAE K=128 ep=35/50 loss=0.0170 PSNR=23.65 active=128/128 (100.0%) perp=111.1
+VQ-VAE K=128 ep=36/50 loss=0.0170 PSNR=23.63 active=128/128 (100.0%) perp=110.8
+VQ-VAE K=128 ep=37/50 loss=0.0171 PSNR=23.64 active=128/128 (100.0%) perp=111.3
+VQ-VAE K=128 ep=38/50 loss=0.0172 PSNR=23.65 active=128/128 (100.0%) perp=111.4
+VQ-VAE K=128 ep=39/50 loss=0.0173 PSNR=23.63 active=128/128 (100.0%) perp=111.3
+VQ-VAE K=128 ep=40/50 loss=0.0174 PSNR=23.67 active=128/128 (100.0%) perp=111.1
+VQ-VAE K=128 ep=41/50 loss=0.0174 PSNR=23.68 active=128/128 (100.0%) perp=111.7
+VQ-VAE K=128 ep=42/50 loss=0.0174 PSNR=23.66 active=128/128 (100.0%) perp=112.0
+VQ-VAE K=128 ep=43/50 loss=0.0175 PSNR=23.70 active=128/128 (100.0%) perp=112.1
+VQ-VAE K=128 ep=44/50 loss=0.0175 PSNR=23.68 active=128/128 (100.0%) perp=112.1
+VQ-VAE K=128 ep=45/50 loss=0.0175 PSNR=23.68 active=128/128 (100.0%) perp=112.0
+VQ-VAE K=128 ep=46/50 loss=0.0176 PSNR=23.69 active=128/128 (100.0%) perp=112.3
+VQ-VAE K=128 ep=47/50 loss=0.0176 PSNR=23.68 active=128/128 (100.0%) perp=111.9
+VQ-VAE K=128 ep=48/50 loss=0.0176 PSNR=23.70 active=128/128 (100.0%) perp=112.3
+VQ-VAE K=128 ep=49/50 loss=0.0177 PSNR=23.68 active=128/128 (100.0%) perp=112.5
+VQ-VAE K=128 ep=50/50 loss=0.0177 PSNR=23.70 active=128/128 (100.0%) perp=112.5
+     K  epoch      loss  recon_loss   val_psnr  active_codes  utilization_pct  perplexity     seconds
+0  512     50  0.015152    0.004312  24.100873           199        38.867188  169.500183  386.035557
+1  256     50  0.016466    0.004587  23.821444           159        62.109375  132.216843  380.832930
+2  128     50  0.017678    0.004702  23.700351           128       100.000000  112.475334  378.395686
+PixelCNN K=512 ep= 1/30 CE=4.1900
+PixelCNN K=512 ep= 2/30 CE=3.8442
+PixelCNN K=512 ep= 3/30 CE=3.7918
+PixelCNN K=512 ep= 4/30 CE=3.7605
+PixelCNN K=512 ep= 5/30 CE=3.7375
+PixelCNN K=512 ep= 6/30 CE=3.7214
+PixelCNN K=512 ep= 7/30 CE=3.7083
+PixelCNN K=512 ep= 8/30 CE=3.6963
+PixelCNN K=512 ep= 9/30 CE=3.6873
+PixelCNN K=512 ep=10/30 CE=3.6789
+PixelCNN K=512 ep=11/30 CE=3.6717
+PixelCNN K=512 ep=12/30 CE=3.6654
+PixelCNN K=512 ep=13/30 CE=3.6593
+PixelCNN K=512 ep=14/30 CE=3.6539
+PixelCNN K=512 ep=15/30 CE=3.6488
+PixelCNN K=512 ep=16/30 CE=3.6441
+PixelCNN K=512 ep=17/30 CE=3.6393
+PixelCNN K=512 ep=18/30 CE=3.6354
+PixelCNN K=512 ep=19/30 CE=3.6317
+PixelCNN K=512 ep=20/30 CE=3.6273
+PixelCNN K=512 ep=21/30 CE=3.6242
+PixelCNN K=512 ep=22/30 CE=3.6215
+PixelCNN K=512 ep=23/30 CE=3.6179
+PixelCNN K=512 ep=24/30 CE=3.6144
+PixelCNN K=512 ep=25/30 CE=3.6122
+PixelCNN K=512 ep=26/30 CE=3.6096
+PixelCNN K=512 ep=27/30 CE=3.6069
+PixelCNN K=512 ep=28/30 CE=3.6044
+PixelCNN K=512 ep=29/30 CE=3.6022
+PixelCNN K=512 ep=30/30 CE=3.6002
+PixelCNN K=256 ep= 1/30 CE=3.8988
+PixelCNN K=256 ep= 2/30 CE=3.5970
+PixelCNN K=256 ep= 3/30 CE=3.5510
+PixelCNN K=256 ep= 4/30 CE=3.5255
+PixelCNN K=256 ep= 5/30 CE=3.5079
+PixelCNN K=256 ep= 6/30 CE=3.4931
+PixelCNN K=256 ep= 7/30 CE=3.4826
+PixelCNN K=256 ep= 8/30 CE=3.4732
+PixelCNN K=256 ep= 9/30 CE=3.4653
+PixelCNN K=256 ep=10/30 CE=3.4581
+PixelCNN K=256 ep=11/30 CE=3.4513
+PixelCNN K=256 ep=12/30 CE=3.4455
+PixelCNN K=256 ep=13/30 CE=3.4400
+PixelCNN K=256 ep=14/30 CE=3.4349
+PixelCNN K=256 ep=15/30 CE=3.4302
+PixelCNN K=256 ep=16/30 CE=3.4260
+PixelCNN K=256 ep=17/30 CE=3.4215
+PixelCNN K=256 ep=18/30 CE=3.4179
+PixelCNN K=256 ep=19/30 CE=3.4141
+PixelCNN K=256 ep=20/30 CE=3.4105
+PixelCNN K=256 ep=21/30 CE=3.4074
+PixelCNN K=256 ep=22/30 CE=3.4047
+PixelCNN K=256 ep=23/30 CE=3.4014
+PixelCNN K=256 ep=24/30 CE=3.3990
+PixelCNN K=256 ep=25/30 CE=3.3957
+PixelCNN K=256 ep=26/30 CE=3.3934
+PixelCNN K=256 ep=27/30 CE=3.3907
+PixelCNN K=256 ep=28/30 CE=3.3888
+PixelCNN K=256 ep=29/30 CE=3.3865
+PixelCNN K=256 ep=30/30 CE=3.3845
+PixelCNN K=128 ep= 1/30 CE=3.7454
+PixelCNN K=128 ep= 2/30 CE=3.5100
+PixelCNN K=128 ep= 3/30 CE=3.4656
+PixelCNN K=128 ep= 4/30 CE=3.4393
+PixelCNN K=128 ep= 5/30 CE=3.4216
+PixelCNN K=128 ep= 6/30 CE=3.4079
+PixelCNN K=128 ep= 7/30 CE=3.3966
+PixelCNN K=128 ep= 8/30 CE=3.3865
+PixelCNN K=128 ep= 9/30 CE=3.3787
+PixelCNN K=128 ep=10/30 CE=3.3716
+PixelCNN K=128 ep=11/30 CE=3.3652
+PixelCNN K=128 ep=12/30 CE=3.3594
+PixelCNN K=128 ep=13/30 CE=3.3534
+PixelCNN K=128 ep=14/30 CE=3.3491
+PixelCNN K=128 ep=15/30 CE=3.3441
+PixelCNN K=128 ep=16/30 CE=3.3402
+PixelCNN K=128 ep=17/30 CE=3.3358
+PixelCNN K=128 ep=18/30 CE=3.3317
+PixelCNN K=128 ep=19/30 CE=3.3283
+PixelCNN K=128 ep=20/30 CE=3.3253
+PixelCNN K=128 ep=21/30 CE=3.3219
+PixelCNN K=128 ep=22/30 CE=3.3184
+PixelCNN K=128 ep=23/30 CE=3.3161
+PixelCNN K=128 ep=24/30 CE=3.3129
+PixelCNN K=128 ep=25/30 CE=3.3104
+PixelCNN K=128 ep=26/30 CE=3.3078
+PixelCNN K=128 ep=27/30 CE=3.3053
+PixelCNN K=128 ep=28/30 CE=3.3028
+PixelCNN K=128 ep=29/30 CE=3.3008
+PixelCNN K=128 ep=30/30 CE=3.2993
+FID VQ-VAE K=512: 114.45886034956919
+FID VQ-VAE K=256: 117.83326886972361
+FID VQ-VAE K=128: 116.38685179689246
+                     model         FID
+0  VQ-VAE K=512 + PixelCNN  114.458860
+1  VQ-VAE K=256 + PixelCNN  117.833269
+2  VQ-VAE K=128 + PixelCNN  116.386852
+Part A complete! All VQ-VAE and PixelCNN models and metrics saved successfully.

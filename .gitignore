@@ -15,8 +15,7 @@ env/
 ENV/
 
 # Data and Outputs (large tensors and generated checkpoints/images)
-data/
-outputs/
+
 *.tar.gz
 *.pth
 *.pt
