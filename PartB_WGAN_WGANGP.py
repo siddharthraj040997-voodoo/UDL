@@ -38,10 +38,8 @@ DATA_DIR = "./data"
 OUT_DIR = Path("./outputs"); OUT_DIR.mkdir(exist_ok=True)
 BATCH_SIZE = 128
 NUM_WORKERS = min(4, os.cpu_count() or 1)
-EPOCHS_VAE = 50
-EPOCHS_VQVAE = 50
-EPOCHS_PIXELCNN = 30
-EPOCHS_GAN = 100
+EPOCHS_GAN = int(os.environ.get("EPOCHS_GAN", 100))
+MAX_TRAIN_BATCHES = int(os.environ.get("MAX_TRAIN_BATCHES", 0))
 print("Device:", DEVICE)
 if DEVICE.type != "cuda":
     print("WARNING: Run this notebook on the mandatory BITS WILP/Prayogshala GPU infrastructure.")
