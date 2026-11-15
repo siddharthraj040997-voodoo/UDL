@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jupyter
+.ipynb_checkpoints
+
+# Environment
+.env
+venv/
+env/
+ENV/
+
+# Data and Outputs (large tensors and generated checkpoints/images)
+data/
+outputs/
+*.tar.gz
+*.pth
+*.pt
